@@ -1,1 +1,50 @@
-<!-- 地図画面 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps JavaScript APIで目的地検索</title>
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #search-box {
+            position: absolute;
+            top: 10px;
+            left: 100%-240px;
+            width: 240px;
+            z-index: 5;
+        }
+        #clickplace{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            z-index: 6;
+        }
+        #placeinformation{
+            font-size: 20px;
+        }
+        .guidebutton{
+            size: 200px;
+        }
+    </style>
+    <script type="text/JavaScript" src="search.js"></script>
+</head>
+<body>
+    <input id="search-box" type="text" placeholder="Search for places">
+    <div id="clickplace">
+        <div id="placeinformation"></div>
+        <button id="guidestartbutton" class="guidebutton">目的地にする</button>
+        <button id="cancelbutton" class="guidebutton">キャンセル</button>
+    </div>
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtg7IjlI7cqbViGAWNLNoz7sKxx2gwHXs&libraries=places&callback=initMap"></script>
+</body>
+</html>
