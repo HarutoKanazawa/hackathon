@@ -38,12 +38,12 @@ initMap();
 
 // モーダルを表示
 document.addEventListener('DOMContentLoaded', () => {
-	const modal = document.getElementById('js-modal'),
-	mOpen = document.getElementById('js-modal-open'),
-		mClose = document.getElementById('js-modal-close');
+	const modal = document.querySelector('js-modal');
+	const mOpen = document.querySelector('js-modal-open');
+	const mClose = document.querySelector('js-modal-close');
 
 	//「開くボタン」をクリックしてモーダル
-	const modalOpen = () => modal.classList.add('is-active');
+	const modalOpen = () => {modal.classList.add('is-active')};
 	mOpen.addEventListener('click', modalOpen);
 
 
@@ -56,8 +56,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	const modalOut = (evt) => {
 		if (evt.target == modal) modal.classList.remove('is-active');
 	}
-
-})
-
-
 addEventListener('click', modalOut);
+})

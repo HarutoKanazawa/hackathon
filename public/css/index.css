@@ -16,11 +16,11 @@ html, body {
 	padding: 100px;
 }
 
-/* モーダルを開くボタン */
-.modal-open{
-  position: fixed;
-  top: 50%;
+.modal-open {
+  position: absolute;
+  top: 10px;
   left: 50%;
+  transform: translateX(-50%);
   font-size: 16px;
   font-weight: bold;
   width: 300px;
@@ -29,9 +29,7 @@ html, body {
   background: #000;
   border: none;
   cursor: pointer;
-  translate: -50% -50%;
 }
-
 /* モーダルと背景の指定 */
 .modal{
   position: fixed;
