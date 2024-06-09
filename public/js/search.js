@@ -1,8 +1,9 @@
 var initMap = () => {
-    const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 35.6811673, lng: 139.7670516 },
-        zoom: 8,
-    });
+
+    if (!map) {
+        console.error('map is not defined');
+        return;
+    }
 
     // サーチボックスの作成
     const input = document.getElementById("search-box");
