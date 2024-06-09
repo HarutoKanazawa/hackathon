@@ -1,5 +1,6 @@
 var initMap = () => {
 
+
     if (!map) {
         console.error('map is not defined');
         return;
