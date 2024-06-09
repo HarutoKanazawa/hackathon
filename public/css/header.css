@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html{font-size: 100%;}
+body{font-family: "Hiragino Kaku Gothic Pron", "Hiragino Sans", "BIZ UDPGothic", sans-serif;line-height: 1.7;
+color: #432;}
+
+a {text-decoration: none;}
+img{max-width: 100%;}
+
+/* レイアウト */
+.align-center{text-align: center;}
+.wrapper {
+    max-width: 2000px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+/* ヘッダー */
+.page-header{padding-top: .5rem;}
+.logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {width: 150px;}
+.main-nav{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 2rem;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.main-nav a{color: #432;}
+.main-nav a:hover{color: #0bd;}
+
+/* 見出し */
+.font-english{
+    font-family: 'philosopher', sans-serif;
+    font-weight: normal;
+}
+.page-title,
+.heading-large,
+.heading-medium{
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.page-title{
+    margin-top: 2rem;
+    line-height: 1.4;
+    width: 600px;
+    white-space: nowrap;
+}
+
+/* ヘッダーカバー画像 */
+.cover{
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+}
+
+
+/* デスクトップ版 */
+@media (min-width: 800px) {
+    /* 見出し */
+    .page-title{
+        font-size: 5rem;
+    }
+
+    .heading-large{font-size: 4rem;}
+    .post-title {
+        font-size: 2rem;
+        justify-content: center;
+    }
+    
+    /* ヘッダー */
+    .page-header {
+        display: flex;
+        justify-content:  space-between;
+        padding-top: 1.5rem;
+    }
+    .main-nav {font-size: 2rem;}
+
+    /* ヘッダーカバー画像 */
+    .sub-cover {
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+}
