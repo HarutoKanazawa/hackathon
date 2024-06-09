@@ -1,3 +1,4 @@
+<!-- 現在地表示 -->
 <!DOCTYPE html><!---->
 <html lang="ja">
 
@@ -7,12 +8,24 @@
     <title>GoogleMap</title>
 
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyAtg7IjlI7cqbViGAWNLNoz7sKxx2gwHXs&language=ja" async defer></script>
+    <script src="../js/index.js" async defer></script>
     <link rel="stylesheet" href="../css/index.css">
   </head>
 
 <!-- body -->
   <body>
+    <!-- モーダルを開くボタン -->
+    <button class="modal-open js-modal-open">ルート検索</button> 
+
+    <!-- モーダル本体 -->
+    <div class="modal js-modal">
+      <div class="modal-container">
+        <div class="modal-close js-modal-close">x</div>
+        <div class="modal-content">モーダルウィンドウの内容</div>
+      </div>
+    </div>
+
     <div id="map"></div>
-    <script src="../js/index.js"></script>
+  
   </body>
 </html>
