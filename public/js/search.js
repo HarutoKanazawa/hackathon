@@ -22,6 +22,7 @@ class Search {
         document.getElementById("guidestartbutton").addEventListener("click", this.selectedplace.bind(this));
         document.getElementById("cancelbutton").addEventListener("click", this.selectplacecencel.bind(this)); 
         this.searchBox.addListener("places_changed", this.completeplace.bind(this));
+
     }
 
     selectedplace(){
@@ -79,6 +80,7 @@ class Search {
                 })
             );
             this.markers[index].addListener('click', () => {  
+
                 // マーカーがクリックされたときの処理をここに記述
                 document.getElementById("clickplace").style.display = "block";
                 this.selectedmaeker=this.markers[index];
