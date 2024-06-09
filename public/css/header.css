@@ -3,12 +3,21 @@
 /* 共通部分 */
 html{font-size: 100%;}
 body{font-family: "Hiragino Kaku Gothic Pron", "Hiragino Sans", "BIZ UDPGothic", sans-serif;line-height: 1.7;
-color: #432;}
+color: #fff;}
 
 a {text-decoration: none;}
 img{max-width: 100%;}
 
 /* レイアウト */
+.header {
+    background: url('../images/image.back.png') no-repeat right bottom / cover fixed;
+    text-align: center;
+}
+.header {
+    background: url('../images/image.main.back.png') no-repeat right bottom / cover fixed;
+    text-align: center;
+}
+
 .align-center{text-align: center;}
 .wrapper {
     max-width: 2000px;
@@ -33,7 +42,7 @@ img{max-width: 100%;}
     line-height: 1.4;
     white-space: nowrap;
 }
-.main-nav a{color: #432;}
+.main-nav a{color: #fff;}
 .main-nav a:hover{color: #0bd;}
 
 /* 見出し */
@@ -51,7 +60,6 @@ img{max-width: 100%;}
 .page-title{
     margin-top: 2rem;
     line-height: 1.4;
-    width: 600px;
     white-space: nowrap;
 }
 
